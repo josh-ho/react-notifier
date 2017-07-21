@@ -1,7 +1,5 @@
 let APP_Constants = {
-  FETCHING_DATA : "FETCHING_DATA",
-  LOADED_DATA : "LOADED_DATA",
-  UPDATED_DATA : "UPDATED_DATA"
+  ADD_TODO_ITEMS : "ADD_TODO_ITEMS"
 }
 
 export default APP_Constants;

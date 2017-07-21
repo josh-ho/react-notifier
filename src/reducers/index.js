@@ -1,20 +1,20 @@
 import APP from '../constants'
 import { combineReducers } from 'redux'
 
-function loadWebsiteData( state = [], action ) {
+function addTodoItems( state = [], action ) {
   switch( action.type ) {
-    case APP.LOADED_DATA :
+    case APP.ADD_TODO_ITEMS:
       return Object.assign( {}, {
-        data : action.data,
+        data: action.data,
         lastUpdated : action.lastUpdated
-      });
-    default :
+      })
+    default:
       return state
   }
 }
 
 const websiteReducer = combineReducers({
-  loadWebsiteData
+  addTodoItems
 })
 
 export default websiteReducer;
